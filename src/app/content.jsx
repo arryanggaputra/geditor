@@ -12,10 +12,6 @@ const App = () => {
     setGitDetail(gitDetail);
   }, [gitUrl]);
 
-  useEffect(() => {
-    setGitUrl(window.location.href);
-  }, [window.location.href]);
-
   const cleanGitUrl = () => {
     return gitUrl.replace(/(^\w+:|^)\/\//, "");
   };
