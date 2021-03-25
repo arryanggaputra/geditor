@@ -1,0 +1,21 @@
+{
+  "name": "GEditor - GitHub Button Editor",
+  "description": "GitHub Button Editor makes it easy for you to open code repositories to the Github1s, CodeSandbox, Gitpod, and VSCode platforms.",
+  "version": "0.0.0.2",
+  "browser_action": {
+    "default_title": "GEditor"
+  },
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["*://github.com/*"],
+      "run_at": "document_end"
+    }
+  ]
+}

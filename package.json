@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "build": "webpack && yarn run copy:dist",
+    "copy:dist": "cp -R manifest.json icons ./dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.4",
+    "node-sass": "^5.0.0",
+    "resolve-url-loader": "^3.1.2",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "parse-github-url": "^1.0.2",
+    "preact": "^10.5.13",
+    "url": "^0.11.0"
+  }
+}
